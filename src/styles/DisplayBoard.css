@@ -1,0 +1,9 @@
+.displayUsers-container {
+	display: grid;
+	grid-template-columns: repeat(3, 350px);
+	row-gap: 30px;
+	padding: 0 250px;
+}
+.DisplayBoardh2 {
+	text-align: center;
+}

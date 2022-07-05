@@ -1,0 +1,8 @@
+.complainItem-container {
+	background-color: rgb(196, 190, 190);
+	width: 300px;
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 8px black;
+	padding: 0.8rem;
+}

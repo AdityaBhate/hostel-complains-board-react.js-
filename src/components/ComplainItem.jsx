@@ -1,12 +1,21 @@
 import React from "react";
+import "../styles/ComplainItem.css";
 
 function ComplainItem(item) {
 	return (
-		<div>
+		<div className='complainItem-container'>
 			<p>{item.id + 1}</p>
-			<p>{item.name}</p>
-			<p>{item.roomno}</p>
-			<p>{item.complain}</p>
+			<p className='complainItem-name'>
+				<strong>Name: </strong> {item.name}
+			</p>
+			<p className='complainItem-roomno'>
+				<strong>Room No.: </strong>
+				{item.roomno}
+			</p>
+			<p className='complainItem-complain'>
+				<strong>Complain: </strong>
+				{item.complain}
+			</p>
 			<hr />
 		</div>
 	);
