@@ -5,7 +5,6 @@ import "../styles/DisplayBoard.css";
 
 function DisplayBoard() {
 	const complainBoard = useSelector((state) => state.complain.value);
-	console.log(complainBoard);
 	return (
 		<div>
 			<h2 className='DisplayBoardh2'>Complains</h2>

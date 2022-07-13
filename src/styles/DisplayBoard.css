@@ -1,9 +1,28 @@
 .displayUsers-container {
 	display: grid;
-	grid-template-columns: repeat(3, 350px);
+	grid-template-columns: repeat(3, 380px);
 	row-gap: 30px;
-	padding: 0 250px;
+	justify-content: center;
+	align-content: center;
 }
 .DisplayBoardh2 {
 	text-align: center;
 }
+/* @media (min-width: 900px) {
+	.displayUsers-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 30px;
+		justify-content: center;
+		align-content: center;
+	}
+}
+@media (min-width: 600px) {
+	.displayUsers-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		row-gap: 30px;
+		justify-content: center;
+		align-content: center;
+	}
+} */

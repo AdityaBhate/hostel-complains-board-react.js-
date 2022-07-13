@@ -6,3 +6,15 @@
 	box-shadow: 1px 1px 8px black;
 	padding: 0.8rem;
 }
+.complainItem-button {
+	padding: 0.4rem 0.5rem;
+	outline: none;
+	border-radius: 10px;
+	border: none;
+	background-color: rgb(244, 47, 47);
+	color: white;
+	font-weight: 600;
+}
+.complainItem-button:hover {
+	box-shadow: 0.8px 0.8px 5px rgb(244, 47, 47);
+}

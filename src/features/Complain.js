@@ -9,11 +9,12 @@ const userSlice = createSlice({
 		addComplain: (state, action) => {
 			state.value.push(action.payload);
 		},
-		deleteComplain: (state, action) => {},
-		updateComplain: (state, action) => {},
+		deleteComplain: (state, action) => {
+			state.value = state.value.filter((user) => user.id !== action.payload.id);
+		},
 	},
 });
 
-export const { addComplain } = userSlice.actions;
+export const { addComplain, deleteComplain } = userSlice.actions;
 
 export default userSlice.reducer;

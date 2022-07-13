@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { addComplain } from "../features/Complain";
 import { useDispatch, useSelector } from "react-redux";
+import "../styles/InputBoard.css";
 
 function InputBoard() {
 	const complainBoard = useSelector((state) => state.complain.value);
@@ -33,6 +34,7 @@ function InputBoard() {
 				onChange={(e) => setComplain({ ...complain, complain: e.target.value })}
 			/>
 			<button
+				className='InputBoard-button'
 				onClick={() => {
 					dispatch(
 						addComplain({

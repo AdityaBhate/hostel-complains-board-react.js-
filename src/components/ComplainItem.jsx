@@ -1,7 +1,10 @@
 import React from "react";
 import "../styles/ComplainItem.css";
+import { useDispatch } from "react-redux";
+import { deleteComplain } from "../features/Complain.js";
 
 function ComplainItem(item) {
+	const dispatch = useDispatch();
 	return (
 		<div className='complainItem-container'>
 			<p>{item.id + 1}</p>
@@ -17,6 +20,13 @@ function ComplainItem(item) {
 				{item.complain}
 			</p>
 			<hr />
+			<button
+				className='complainItem-button'
+				onClick={() => {
+					dispatch(deleteComplain({ id: item.id }));
+				}}>
+				Remove / Resolve
+			</button>
 		</div>
 	);
 }

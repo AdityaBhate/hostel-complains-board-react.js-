@@ -1,0 +1,41 @@
+.addUser {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.3em;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	margin: 10px;
+	padding-bottom: 20px;
+}
+label {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-top: 0.125rem;
+	color: rgb(13, 18, 23);
+}
+.InputBoard-button {
+	padding: 0.5rem 0.6rem;
+	outline: none;
+	border-radius: 10px;
+	border: none;
+	background-color: rgb(36, 219, 36);
+	color: white;
+	font-weight: 600;
+	font-size: 1rem;
+	margin-top: 10px;
+}
+.InputBoard-button:hover {
+	box-shadow: 0.8px 0.8px 5px rgb(36, 219, 36);
+}
+input {
+	outline: none;
+	padding: 0.3rem 0.3rem;
+	border-radius: 10px;
+}
+textarea {
+	outline: none;
+	padding: 0.3rem 0.3rem;
+	border-radius: 10px;
+}
